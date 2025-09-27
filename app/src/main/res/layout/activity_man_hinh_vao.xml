@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_manhinh"
+    tools:context=".ManHinhVao">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="298dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="168dp"
+            android:src="@drawable/musicintro" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dancingfont"
+            android:text="Bắt Đầu Với Ý Tưởng Của Bạn"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/longreach"
+            android:text="Thưởng thức nào"
+            android:layout_marginTop="6dp"
+            android:textSize="25dp"
+            android:alpha="0.6"
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
