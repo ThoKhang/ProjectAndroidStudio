@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Musicapp">
         <activity
+            android:name=".GiaoDienDangNhap2"
+            android:exported="false" />
+        <activity
             android:name=".GiaoDienDangNhap"
             android:exported="false" />
         <activity

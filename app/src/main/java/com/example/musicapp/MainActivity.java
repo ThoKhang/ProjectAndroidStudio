@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Delay 3s rồi chuyển sang GiaoDienDangNhap
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, GiaoDienDangNhap.class);
+            Intent intent = new Intent(MainActivity.this, GiaoDienDangNhap2.class);
             startActivity(intent);
             finish(); // đóng MainActivity để không quay lại
         }, 3000); // 3000ms = 3 giây
