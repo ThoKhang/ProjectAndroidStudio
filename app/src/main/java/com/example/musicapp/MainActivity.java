@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_man_hinh_vao);
+        setContentView(R.layout.activity_main);
 
         // Ẩn status bar + navigation bar
         getWindow().getDecorView().setSystemUiVisibility(
