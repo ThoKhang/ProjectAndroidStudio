@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_man_hinh_vao);
+        setContentView(R.layout.activity_main);
 
         // Ẩn status bar + navigation bar
         getWindow().getDecorView().setSystemUiVisibility(
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Delay 3s rồi chuyển sang GiaoDienDangNhap
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, GiaoDienDangNhap.class);
+            Intent intent = new Intent(MainActivity.this, GiaoDienDangNhap2.class);
             startActivity(intent);
             finish(); // đóng MainActivity để không quay lại
         }, 3000); // 3000ms = 3 giây

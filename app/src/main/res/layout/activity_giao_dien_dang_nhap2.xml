@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GiaoDienDangNhap">
-
+    tools:context=".GiaoDienDangNhap2">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -26,7 +25,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="376dp"
         android:layout_height="787dp"
@@ -58,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/robotothin"
-                android:text="Tạo Tài Khoản"
+                android:text="Đăng Nhập"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="35dp"
@@ -75,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="28dp"
-                android:text="Tên Đăng Nhập"
+                android:text="Email"
                 android:fontFamily="@font/robotothin"
                 android:textSize="20dp"
                 android:textColor="@color/white"/>
@@ -83,23 +81,7 @@
                 android:id="@+id/textDKTenDangNhap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nhập tên đăng nhập"
-                android:background="@drawable/retangle"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="28dp"
-                android:text="Email"
-                android:fontFamily="@font/robotothin"
-                android:textSize="20dp"
-                android:textColor="@color/white"/>
-            <EditText
-                android:id="@+id/textDKEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Nhập tên email"
+                android:hint="Nhập Email"
                 android:background="@drawable/retangle"
                 />
             <TextView
@@ -119,12 +101,40 @@
                 android:hint="Nhập mật khẩu"
                 android:background="@drawable/retangle"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    android:text="Tôi đồng ý điều khoản">
+                </CheckBox>
+                <TextView
+                    android:id="@+id/textQuenMatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quên mật khẩu? "
+                    android:textColor="#24CEF0"
+                    android:layout_marginLeft="69dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btDangKy"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="28dp"
-                android:text="Đăng Ký"
+                android:text="Đăng Nhập"
                 android:fontFamily="@font/robotothin"
                 android:textStyle="bold"
                 android:textSize="20dp"
@@ -134,11 +144,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:text="Hoặc Tiếp Tục Với"
+                android:text="Hoặc Đăng Nhập Với"
                 android:layout_gravity="center"
                 android:textSize="15sp"
                 android:textColor="@color/white"
-                android:fontFamily="@font/robotothin"
                 android:alpha=".4"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btDangNhapGoogle"
@@ -155,33 +164,32 @@
                 app:iconGravity="textStart"
                 app:iconPadding="15dp"
                 app:iconTint="@null"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="15dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Đã có tài khoản ?"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/robotothin"/>
-                <TextView
-                    android:id="@+id/textDangNhapNgay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Đăng Nhập Ngay !"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:textColor="#24CEF0"
-                    android:layout_marginLeft="10dp"
-                    />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn chưa có tài khoản ?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/chuyenDenDangKy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="đăng ký ngay"
+                    android:textColor="#24CEF0"
+                    android:clickable="true"
+                    />
             </LinearLayout>
 
+
         </LinearLayout>
-
     </LinearLayout>
-        
-
 </androidx.constraintlayout.widget.ConstraintLayout>
