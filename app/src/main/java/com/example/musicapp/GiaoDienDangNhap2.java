@@ -30,6 +30,13 @@ public class GiaoDienDangNhap2 extends AppCompatActivity {
                     startActivity(intent);
                 }
         );
+        TextView textQuenMatKhau = findViewById(R.id.textQuenMatKhau);
+        textQuenMatKhau.setOnClickListener(
+                v -> {
+                    Intent intent = new Intent(this, QuenMatKhau1.class);
+                    startActivity(intent);
+                }
+        );
         // Ẩn status bar + navigation bar
         getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_FULLSCREEN |
